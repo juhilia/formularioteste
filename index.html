@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b98e75;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            border:4px solid #000000;
+        }
+
+        h1 {
+            text-align: center;
+        
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 19px;
+            border: 2px solid #000000;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #925837;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto; /* Centraliza horizontalmente */
+        
+        }
+
+        input[type="submit"]:hover {
+            background-color: #804400;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
